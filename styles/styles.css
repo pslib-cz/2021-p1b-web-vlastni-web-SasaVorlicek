@@ -15,33 +15,36 @@ body {
 }
 
 header {
-    background-color:var(--main-red-color);
-    height: 80px;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    position:fixed;
+}
+
+.prouzek {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: var(--main-red-color);
+    height: 3.5rem;
 }
 
 header img {
-    position: absolute;
+    position:fixed;
     width: 300px;
     height: 90px;
-    margin-left: 2em;
-    margin-top: 3em;
+    margin-left: 5em;
+    margin-top: 1.7em;
 }
 
 .logo_text {
-    display: inline;
-    position: absolute;
+    position: fixed;
     right: 3em;
-    border: 2px solid white;
+    border: 2px solid var(--main-red-color);
     padding: 6px;
     border-radius: 5px;
-    color: white;
-    margin: 0;
-    margin: 0.4em 0;
-}
-
-nav {
-    display: inline-block;
-    justify-content: center;
+    color: var(--main-red-color);
+    margin: 0.1em 0;
 }
 
 ul {
@@ -49,38 +52,40 @@ ul {
 }
 
 nav ul {
-    list-style-type: none;
     position: fixed;
+    list-style-type: none;
     top: 0;
     left: 0;
     right: 0;
+    margin: 1.3em 0;
+}
+
+.navbar {
     text-align: center;
-    text-decoration: none;
-    margin: 2em 0;
 }
 
 nav ul li {
     display: inline;
-    border: 30.03px solid var(--main-red-color);
-    background-color: var(--main-red-color);
-    border-radius: 4px;
+    border: 1.33em solid white;
+    background-color: white;
 }
 
-nav ul li :hover {
-    display: inline;
-    border: 30.03px solid var(--list-color);
-    background-color: var(--list-color);
-    border-radius: 4px;
+.momentalni_stranka{
+    border: 1.3em solid #d4d9d5;
+    background-color: #d4d9d5;
 }
 
 nav ul a {
     text-decoration: none;
-    color:white
-    
+    color: var(--text-color);
 }
 
-nav ul a:hover {
-    text-decoration: none;
-    color: var(--text-color);
-    
+.background_foto {
+    height: 500;
+    width: 100%;
+    background-image: url(../images/background_foto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
