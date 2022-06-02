@@ -1,3 +1,5 @@
 Co udělat:
 
-RESPONSIVE STRÁNKA
+Dát body padding-top aby nebyla stránka za headerem
+
+Zmenit title icon
