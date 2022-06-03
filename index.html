@@ -4,17 +4,37 @@
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elektroinstalace KÍLHETS</title>
     <link rel="icon" href="images/title_logo.png" type = "image/x-icon">
+
+    <script src="hamburger.js"></script>
 </head>
 <body>
     <header>
 
     <div class="header-flex-wrap">
-        <img class="header-logo" src="images/logo.png" alt="Logo stránky">
+        <a href="index.html">
+            <img class="header-logo" src="images/logo.png" alt="Logo stránky">
+        </a>
+
+        <!-- Hamburger -->
+        <div onclick="myFunction()" class="dropdown">
+            <button class="hamburger is-active">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Domovská stránka</a>
+                <a href="reference.html">Reference</a>
+                <a href="#kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <!-- Hamburger -->
+
         <nav class="navbar">
             <ul>
                 <li><a href="#">Reference</a></li>
@@ -30,6 +50,5 @@
     </div>
     <div class="prouzek"></div>
     </header>
-    
 </body>
 </html>
