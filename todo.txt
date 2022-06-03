@@ -1,7 +1,6 @@
 Co udělat:
 
 Dát body padding-top aby nebyla stránka za headerem - pro .background-foto
-responsivně - zarovnání loga úplně ke kraji + hamburger menu + odstranění nápisu
 
 
 
