@@ -196,7 +196,8 @@ nav ul li a:hover {
 
 .card {
     width: 400px;
-    height: 300px;
+    height: 250px;
+    
 
     border: 6px solid var(--border-color);
     border-radius: 3px;
@@ -206,6 +207,7 @@ nav ul li a:hover {
 
     text-align: center;
     font-size: 16px;
+    padding: 0 20px 20px 20px;
 }
 
 .card-long {
@@ -259,7 +261,7 @@ nav ul li a:hover {
         font-size: 15px;
     }
     .card h2 {
-        margin-top: 15px;
+        margin-top: 50px;
     }
     .card {
         height: 220px;
@@ -291,6 +293,9 @@ nav ul li a:hover {
         width: 430px;
         height: 130px;
     }
+    .card h2 {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -314,23 +319,23 @@ nav ul li a:hover {
     .card {
         width: 350px;
         height: 230px;
+        padding: 8px;
     }
     .card-long {
         width: 430px;
         height: 130px;
     }
+    .card h2 {
+        margin-top: 20px;
+    }
 }
 
-@media(max-width: 380px) { 
+@media(max-width: 400px) { 
     .main-border-wrap { 
         font-size: 12px;
     }
     .card {
-        width: 200px;
+        width: 250px;
         height: 300px;
-    }
-    .card-long {
-        width: 430px;
-        height: 130px;
     }
 }
