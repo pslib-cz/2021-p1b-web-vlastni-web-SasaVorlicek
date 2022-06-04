@@ -2,18 +2,14 @@
 
 :root {
     --main-red-color: #C44536;
-    --list-color: #EDDDD4;
-    /* 
-    var(--main-red-color)
-    var(--list-color)
-    */
+    --list-hover-color: rgb(247, 246, 246);
+    --border-color: #772E25;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: Roboto, Arial, sans-serif ;
-    padding-top: 60px;
 }
 
 .header-flex-wrap {
@@ -26,11 +22,12 @@ body {
     right: 0;
     left: 0;
     height: 60px;
+    z-index: 2;
     
     background-color: white;
 }
 
-/*---HEADER LOGO*/
+/*---HEADER LOGO---*/
  .header-logo {
     height: 90px ;
     margin-top: 82px;
@@ -38,7 +35,7 @@ body {
 }
 
 
-/* ---NAVBAR--- */
+/*---NAVBAR--- */
 .navbar {
     display: none;
 }
@@ -66,8 +63,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border: 26px solid rgb(247, 246, 246);
-    background-color: rgb(247, 246, 246);
+    border: 26px solid var(--list-hover-color);
+    background-color: var(--list-hover-color);
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
 }
 
@@ -77,7 +74,7 @@ nav ul li a:hover {
     box-shadow: none !important;
 }
 
-/* ---HAMBURGER NAVBAR---*/
+/*---HAMBURGER NAVBAR---*/
 
 .hamburger {
       border: none;
@@ -113,8 +110,11 @@ nav ul li a:hover {
     display: block;
 }
 
+.momentalni_stranka_ham {
+    background-color: #c8ccc9 !important;
+}
 
-/*---HEADER TEXT*/
+/*---HEADER TEXT---*/
 .header-text-outline {
     margin-right: 50px;
 }
@@ -130,12 +130,113 @@ nav ul li a:hover {
 }
 
  .prouzek {
+    position: fixed;
+    top: 60px;
+    z-index: 1;
     background-color: var(--main-red-color);
     height: 58px;
     width: 100%;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.9);
 }
 
+/* ---MAIN FOTO-BACKGROUND--- */
+
+.background {
+    background-image: url(../images/background_foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.8);
+}
+
+.main-border-wrap {
+    border: 3px solid var(--main-red-color);
+    border-radius: 3px;
+    background-color: var(--main-red-color);
+
+    opacity: 0.95;
+    padding: 3em;
+
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.main-border-wrap h1 {
+    font-family: Roboto-Bold;
+}
+
+
+/*---HOME CONTENT--- */
+.content-wrapper {
+    max-width: 1300px; 
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 70px;
+
+
+}
+
+.card-long-flex-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.card-flex-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+
+    border: 6px solid var(--border-color);
+    border-radius: 3px;
+    background-color: var(--main-red-color);
+    color: white;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-long {
+    width: 800px;
+    height: 350px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.card-long h2 {
+    margin-top: 90px;
+}
+
+.card h3 {
+    margin-top: 50px;
+}
+
+.card a {
+    color: white;
+}
+
+.card a::after{
+    content: "\1F851";
+}
+
+.card a:hover{
+    color: rgb(224, 205, 205);
+}
+
+
+/*---MEDIA PRVKY---*/
 @media(max-width: 1150px) {
     .header-text-outline {
         display: none;
@@ -151,6 +252,25 @@ nav ul li a:hover {
     }
 }
 
+@media(max-width: 900px) {
+    .card-long {
+        width: 600px;
+        height: 150px;
+        font-size: 15px;
+    }
+    .card h2 {
+        margin-top: 15px;
+    }
+    .card {
+        height: 220px;
+    }
+    .card-flex-wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+    }
+}
+
 @media(max-width: 640px) {
     .header-logo {
         margin-left: 5px;
@@ -163,6 +283,13 @@ nav ul li a:hover {
     .dropdown-content {
         font-size: 16px;
         min-width: 200px;
+    }
+    .main-border-wrap { 
+        padding: 1em;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
     }
 }
 
@@ -181,5 +308,29 @@ nav ul li a:hover {
         font-size: 14px;
         min-width: 180px;
     }
+    .main-border-wrap { 
+        padding: 0.5em;
+    }
+    .card {
+        width: 350px;
+        height: 230px;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
+    }
+}
 
+@media(max-width: 380px) { 
+    .main-border-wrap { 
+        font-size: 12px;
+    }
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
+    }
 }
