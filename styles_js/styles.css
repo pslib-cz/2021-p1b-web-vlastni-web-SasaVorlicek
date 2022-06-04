@@ -139,6 +139,15 @@ nav ul li a:hover {
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.9);
 }
 
+.main-border-wrap h3 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.main-border-wrap h1 {
+    margin-top: -10px;
+}
+
 /* ---MAIN FOTO-BACKGROUND--- */
 
 .background {
@@ -296,6 +305,9 @@ nav ul li a:hover {
     .card h2 {
         margin-top: 30px;
     }
+    .main-border-wrap h1 {
+        margin-top: 15px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -335,7 +347,11 @@ nav ul li a:hover {
         font-size: 12px;
     }
     .card {
-        width: 250px;
+        width: 230px;
         height: 300px;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
     }
 }
