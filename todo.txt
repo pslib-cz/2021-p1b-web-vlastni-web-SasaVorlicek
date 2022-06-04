@@ -1,9 +1,1 @@
 Co udělat:
-
-Vzhled stránek je zamýšlen na mobilní telefon pro rozměr od cca 360px do 960px. Content-wrapper má omezení na max-width: 960px; margin: 0 auto;
-===>
-Přidat pod background foto grid (přes flexbox, 6 boxů - 3 vedle sebe, 2 vedle sebe nebo vše pod sebou?)
-
-Přidat šipku za odkazy 
-
-Footer 
