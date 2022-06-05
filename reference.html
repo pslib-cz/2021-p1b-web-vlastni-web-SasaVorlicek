@@ -16,37 +16,38 @@
 </head>
 <body>
     <header>
-
-    <div class="header-flex-wrap">
-        <!-- HEADER LOGO -->
-        <a href="index.html">
-            <img class="header-logo" src="images/logo.png" alt="Logo stránky">
-        </a>
-        <!-- HAMBURGER -->
-        <div class="dropdown">
-            <button class="fa fa-bars hamburger is-active" onclick="myFunction()">
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="index.html">SLUŽBY</a>
-                <a class="momentalni_stranka_ham" href="reference.html">REFERENCE</a>
-                <a href="kontakt.html">KONTAKT</a>
+        <div class="header-flex-wrap">
+<!-- HEADER LOGO -->
+            <div class="header-logo-wrap">
+                <a href="index.html">
+                    <img class="header-logo" src="images/logo.png" alt="Logo stránky">
+                </a>
+            </div>
+<!-- HAMBURGER -->
+            <div class="dropdown">
+                <button class="fa fa-bars hamburger is-active" onclick="myFunction()">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">SLUŽBY</a>
+                    <a class="momentalni_stranka_ham" href="reference.html">REFERENCE</a>
+                    <a href="kontakt.html">KONTAKT</a>
+                </div>
+            </div>
+<!-- NAVBAR -->
+            <nav class="navbar">
+                <ul>
+                    <li><a class="momentalni_stranka" href="reference.html">REFERENCE</a></li>
+                    <li><a href="index.html">SLUŽBY</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+<!-- H. TEXT -->
+            <div class="header-text-wrap">
+                <div class="header-text-logo">
+                    KÍLHETS
+                </div>
             </div>
         </div>
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <ul>
-                <li><a class="momentalni_stranka" href="reference.html">REFERENCE</a></li>
-                <li><a href="index.html">SLUŽBY</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
-        </nav>
-        <!-- H. TEXT -->
-        <div class="header-text-outline">
-            <div class="header-text-logo">
-                KÍLHETS
-            </div>
-        </div>
-    </div>
     <div class="prouzek"></div>
     </header>
     <main>
@@ -61,28 +62,43 @@
         </section>
         <section class="content-wrapper">
             <div class="card-long-flex-wrap">
-                <div class="card card-long">
-                    <h2>Naše služby</h2>
-                    <p>Podívejte se na námi nabízené <a href="reference.html">služby</a></p>
-                    <p>Neváhejte a <a href="kontakt.html">kontaktujte</a> nás</p>
+                <div class="card card-long ref">
+                    <h2>Zajímají nás vaše názory</h2>
+                    <div class="card-long-inside-name">
+                        <p>Vaše jméno</p>
+                    </div>
+                    <div class="card-long-inside-inputs">
+                        <input class="ref-input" type="text">
+                    </div>
+                    <div class="card-long-inside-name">
+                        <p>Vaše reference naší firmy</p>
+                    </div>
+                    <div class="card-long-inside-inputs">
+                        <textarea type="text" class="ref-input big-input" type="text"></textarea>
+                    </div>
+                    <div class="card-long-inside-name">
+                        <button class="ref-button"><a href="reference.html">ODESLAT</a></button>
+                    </div>
+
+
                 </div>
             </div>
             <div class="card-flex-wrap">
-                <div class="card">
-                    <h3>Elektroinstalace zařízení</h3>
-                    <p>Zařídíme pro vás celou elektroinstalaci se vším všudy</p>
-                    <p>Přes výrobu, instalaci až revizi zařízení</p>
+                <div class="card ref-c">
+                    <h3>Josef Novák</h3>
+                    <p>"Elektrikáři z Kílhets elektroinstalace mi pomohli se vším co jsem potřeboval"</p>
+                    <p>"Udělali svou práci výborně"</p>
                 </div>
-                <div class="card">
-                    <h3>Průmyslová elektromontáž</h3>
-                    <p>Vytvoříme pro vás speciální plán celé elektromontáže</p>
-                    <p>Celou elektromontáž pro vás následně uděláme</p>
-                    <p>Provedeme i následnou revizi celé elektromontáže</p>
+                <div class="card ref-c">
+                    <h3>Jaroslav Semerád</h3>
+                    <p>"Fakt dobrá práce!!!"</p>
+                    <p>"Díky Firmě Klíhtes mi funguje elektřina po celém domě"</p>
                 </div>
-                <div class="card">
-                    <h3>Servisní činnosti</h3>
-                    <p>Naši specialisté pro vás udělají revizi všech vašich zařízení</p>
-                    <p>Zařídíme případnou opravu nebo znovu montáž poškozenývch zařízení</p>
+                <div class="card ref-c">
+                    <h3>Patrik Hečko</h3>
+                    <p>"Jste borci!!"</p>
+                    <p>"Pomohli mi s celou elektroinstalací a udělali po sobě i revizi"</p>
+
                 </div>
             </div>
         </section>

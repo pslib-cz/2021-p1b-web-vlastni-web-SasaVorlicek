@@ -28,16 +28,20 @@ body {
 }
 
 /*---HEADER LOGO---*/
+.header-logo-wrap {
+    width: 294.92px;
+    margin-left: 50px;
+}
+
  .header-logo {
     height: 90px ;
     margin-top: 82px;
-    margin-left: 40px;
 }
 
 
 /*---NAVBAR--- */
 .navbar {
-    display: none;
+    display: flex;
 }
 
 nav ul {
@@ -85,6 +89,10 @@ nav ul li a:hover {
       width: 50px;
 }
 
+.dropdown {
+    display: none;
+}
+
 .dropdown .fa {
     font-size: 30px;
 }
@@ -115,8 +123,9 @@ nav ul li a:hover {
 }
 
 /*---HEADER TEXT---*/
-.header-text-outline {
+.header-text-wrap {
     margin-right: 50px;
+    width: 294.92px;
 }
 
 .header-text-logo {
@@ -234,32 +243,107 @@ nav ul li a:hover {
     margin-top: 50px;
 }
 
-.card a {
+.slu a {
     color: white;
 }
 
-.card a::after{
+.slu a::after{
     content: "\1F851";
 }
 
-.card a:hover{
+.slu a:hover{
     color: rgb(224, 205, 205);
+}
+
+
+/*---REFEREMCE---*/
+.card-long-inside-name {
+    display: flex;
+    justify-content: center;
+}
+.card-long-inside-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ref h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;;
+}
+
+.ref p {
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+
+.ref-c {
+    height: 200px;
+}
+
+.ref-c h3 {
+    margin-top: 20px;
+}
+
+.ref-input {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(247, 234, 234);
+    width: 250px;
+    margin-bottom: 10px;
+    transition: box-shadow 1s;
+}
+
+.big-input {
+    width: 600px;
+    height: 130px;
+}
+
+.ref-input[type=text]:focus {
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+}
+
+.ref-button {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: var(--border-color);
+
+    width: 120px;
+    height: 45px;
+    transition: background-color 0.35s, box-shadow 0.35s;
+}
+
+.ref-button:hover {
+    background-color: #8b4c44;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ref-button a {
+    color: white;
+    font-size: 15px;
+}
+
+.ref-button a:hover{
+    color: rgb(248, 237, 237);
 }
 
 
 /*---MEDIA PRVKY---*/
 @media(max-width: 1150px) {
-    .header-text-outline {
-        display: none;
-    }
-}
-
-@media(min-width: 810px) {
-    .dropdown .fa {
+    .header-text-wrap {
         display: none;
     }
     .navbar {
-        display:flex;
+        margin-right: 40px;
+    }
+}
+
+@media(max-width: 810px) {
+    .dropdown {
+        display: block;
+    }
+    .navbar {
+        display: none;
     }
 }
 
@@ -280,9 +364,26 @@ nav ul li a:hover {
         align-items: center;
         justify-content: none;
     }
+    .ref h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .big-input {
+        height: 50px;
+    }
+    .ref-button {
+        font-size: 14px;
+        height: 35px;
+    }
+    .ref-c {
+        height: 180px;
+    }
 }
 
-@media(max-width: 640px) {
+@media(max-width: 650px) {
+    .header-logo-wrap {
+        margin: 0;
+    }
     .header-logo {
         margin-left: 5px;
         height: 70px;
@@ -307,6 +408,9 @@ nav ul li a:hover {
     }
     .main-border-wrap h1 {
         margin-top: 15px;
+    }
+    .ref {
+        height: 240px;
     }
 }
 
@@ -340,6 +444,13 @@ nav ul li a:hover {
     .card h2 {
         margin-top: 20px;
     }
+    .ref {
+        width: 300px;
+        height: 240px;
+    }
+    .ref-c {
+        height: 180px;
+    }
 }
 
 @media(max-width: 400px) { 
@@ -353,5 +464,12 @@ nav ul li a:hover {
     .card-long {
         width: 430px;
         height: 130px;
+    }
+    .ref {
+        width: 240px;
+        height: 260px;
+    }
+    .ref-c {
+        height: 160px;
     }
 }
