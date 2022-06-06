@@ -201,11 +201,6 @@ nav ul li a:hover {
     background-color:#f1f1f1;
 }
 
-.card-long-flex-wrap {
-    display: flex;
-    justify-content: center;
-}
-
 .card-flex-wrap {
     display: flex;
     justify-content: center;
@@ -258,7 +253,7 @@ nav ul li a:hover {
 
 
 /*---REFEREMCE---*/
-.card-long-inside-name {
+.flex-center {
     display: flex;
     justify-content: center;
 }
@@ -326,6 +321,27 @@ nav ul li a:hover {
 
 .ref-button a:hover{
     color: rgb(248, 237, 237);
+}
+
+/*---KONTAKT*/
+.kon {
+    height: 700px;
+
+}
+
+.kontakt-card {
+    width: 100%;
+    height: 600px;
+
+    border: none;
+
+    margin-top: 40px;
+
+}
+
+.kon h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;;
 }
 
 
