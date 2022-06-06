@@ -1,13 +1,6 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7851492&assignment_repo_type=AssignmentRepo)
-# Vlastní webová stránka
+Odkaz na github pages: https://pslib-cz.github.io/2021-p1b-web-vlastni-web-SasaVorlicek/
 
-Vytvořte vlastní malý tématický web pomocí HTML a CSS. Toto zadání slouží jako závěrečná práce a finální rekapitulace probraného učiva webové větve předmětu ALGoritmizace.
-
-Web může a musí být na libovolné přijatelné téma. Pokud Vás žádné téma nenapadá, použijte téma referátu na IKT. Text ani obrázky nemusí být nutně Vaše.
-
-Pro pojmenování tříd je doporučená metodika [BEM](http://getbem.com/introduction/).
-
-Editací tohoto souboru a náhradou ``[ ]`` za ``[x]`` můžete evidovat, které body zadání už máte splněné.
+Zdroje stránky jsou zahrnuty v ZDROJE.txt
 
 ## Body zadání
 

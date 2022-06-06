@@ -95,6 +95,7 @@ nav ul li a:hover {
 
 .dropdown .fa {
     font-size: 30px;
+    color: black;
 }
 
 .dropdown-content {
@@ -218,7 +219,7 @@ nav ul li a:hover {
     
 
     border: 6px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 3px;
     background-color: var(--main-red-color);
     color: white;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
@@ -299,12 +300,12 @@ nav ul li a:hover {
     height: 130px;
 }
 
-.ref-input[type=text]:focus {
+.ref-input:focus {
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
 }
 
 .ref-button {
-    border: 1px solid;
+    border: 1px solid black;
     border-radius: 3px;
     background-color: var(--border-color);
 
