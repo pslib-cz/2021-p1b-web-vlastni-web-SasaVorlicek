@@ -70,33 +70,33 @@
                     </div>
                     <label>E-mail</label>
                     <div class="card-long-inside-inputs">
-                        <input class="ref-input" type="text" placeholder="jannovak@seznam.cz">
+                        <input class="ref-input" type="text" placeholder="jan.novak@seznam.cz" required>
                     </div>
                     <label>Zvolená služba</label>
                     <div class="flex-center">
-                        <select>
+                        <select class="ref-input">
                             <option>Elektroinstalace</option>
                             <option>Průmyslová elektromontáž</option>
                             <option>Servis / revize</option>
                         </select>
                     </div>
-                    <label>Můj zájem o</label>
-                    <div class="flex-center">
-                        <input type="checkbox" id="1">
-                        <label for="1">Konzultaci</label>
-                        <input type="checkbox" id="2">
-                        <label for="2">Cenovou nabídku</label>
+                    <div class="kon-checkboxes">
+                        <label>Mám zájem o</label>
+                        <div class="flex-center checkbox">
+                            <input class="kon-checkbox" type="checkbox" id="1">
+                            <label for="1">Konzultaci</label>
+                        </div>
+                        <div class="flex-center checkbox-2">
+                            <input class="kon-checkbox" type="checkbox" id="2">
+                            <label for="2">Cenovou nabídku</label>
+                        </div>
                     </div>
                     <label>Zpráva</label>
                     <div class="card-long-inside-inputs">
-                        <textarea class="ref-input big-input"></textarea>
+                        <textarea class="ref-input big-input kon-textarea"></textarea>
                     </div>
-
-
-
-
                     <div class="flex-center">
-                        <button class="ref-button"><a href="kontakt.html">ODESLAT</a></button>
+                        <button class="ref-button kon-button"><a href="kontakt.html">ODESLAT</a></button>
                     </div>
                 </div>
             </div>

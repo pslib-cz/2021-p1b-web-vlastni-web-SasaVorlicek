@@ -285,9 +285,9 @@ nav ul li a:hover {
     border: 1px solid black;
     border-radius: 3px;
     background-color: rgb(247, 234, 234);
-    width: 250px;
+    width: 260px;
     margin-bottom: 10px;
-    transition: box-shadow 1s;
+    transition: box-shadow 0.35s;
 }
 
 .big-input {
@@ -325,8 +325,7 @@ nav ul li a:hover {
 
 /*---KONTAKT*/
 .kon {
-    height: 700px;
-
+    height: 650px;
 }
 
 .kontakt-card {
@@ -336,13 +335,45 @@ nav ul li a:hover {
     border: none;
 
     margin-top: 40px;
-
 }
 
 .kon h2 {
     margin-top: 30px;
-    margin-bottom: 15px;;
+    margin-bottom: 30px;;
 }
+
+.kon .ref-input {
+    margin-bottom: 15px;
+}
+
+.kon select {
+    margin-bottom: 15px;
+}
+
+.kon-button {
+    margin-top: 20px;
+}
+
+.checkbox {
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.checkbox-2 {
+    margin-bottom: 15px;
+}
+
+.kon-checkbox {
+    margin: auto 0;
+    margin-right: 5px;
+    
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(247, 234, 234);
+    height: 18px;
+    width: 18px;
+}
+
 
 
 /*---MEDIA PRVKY---*/
@@ -395,6 +426,14 @@ nav ul li a:hover {
     .ref-c {
         height: 180px;
     }
+    .kon {
+        height: 600px;
+        font-size: 18px;
+    }
+    .kon-textarea {
+        width: 500px;
+        height: 120px;
+    }
 }
 
 @media(max-width: 650px) {
@@ -428,6 +467,9 @@ nav ul li a:hover {
     }
     .ref {
         height: 240px;
+    }
+    .kon {
+        height: 570px;
     }
 }
 
@@ -468,6 +510,14 @@ nav ul li a:hover {
     .ref-c {
         height: 180px;
     }
+    .kon {
+        height: 570px;
+        width: 360px;
+    }
+    .kon-textarea {
+        width: 330px;
+        height: 110px;
+    }
 }
 
 @media(max-width: 400px) { 
@@ -488,5 +538,16 @@ nav ul li a:hover {
     }
     .ref-c {
         height: 160px;
+    }
+    .kon {
+        height: 550px;
+        width: 340px;
+    }
+    .kon-textarea {
+        width: 240px;
+        height: 100px;
+    }
+    .kon .ref-input {
+        width: 240px;
     }
 }
