@@ -149,14 +149,6 @@ nav ul li a:hover {
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.9);
 }
 
-.main-border-wrap h3 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-}
-
-.main-border-wrap h1 {
-    margin-top: -10px;
-}
 
 /* ---MAIN FOTO-BACKGROUND--- */
 
@@ -186,8 +178,14 @@ nav ul li a:hover {
     color: white;
 }
 
+.main-border-wrap h3 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
 .main-border-wrap h1 {
     font-family: Roboto-Bold;
+    margin-top: -10px;
 }
 
 
@@ -333,8 +331,11 @@ nav ul li a:hover {
     height: 600px;
 
     border: none;
+    border-radius: 0px;
 
     margin-top: 40px;
+    padding: 0px;
+    display: flex;
 }
 
 .kon h2 {
@@ -351,7 +352,7 @@ nav ul li a:hover {
 }
 
 .kon-button {
-    margin-top: 20px;
+    margin: 15px 0;
 }
 
 .checkbox {
@@ -368,10 +369,66 @@ nav ul li a:hover {
     margin-right: 5px;
     
     border: 1px solid black;
-    border-radius: 3px;
     background-color: rgb(247, 234, 234);
     height: 18px;
     width: 18px;
+}
+
+.text-kontakt {
+    width: 50%;
+    height: 100%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text-kontakt p,h3 {
+    font-size: 20px;
+    margin: 0.5em;
+}
+
+.mapa-kontakt {
+    width: 40%;
+    height: 100%;
+}
+
+
+/*---ZDROJE---*/
+.zdroje {
+    position: absolute;
+    bottom: 7px;
+    right: 60px;
+    font-size: 17px;
+    color:white;
+    border: white solid 1px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.zdroje-seznam {
+    list-style: none;
+    padding: 0;
+}
+
+.zdroje-seznam li {
+    margin: 6px 0;
+    font-size: 19px;
+}
+
+.zdroje-seznam li a {
+    text-decoration: underline;
+    color: white;
+}
+
+.zdroje-texty {
+    margin-top: 45px;
+}
+
+.main-border-wrap h2 {
+    font-size: 40px;
 }
 
 
@@ -434,6 +491,9 @@ nav ul li a:hover {
         width: 500px;
         height: 120px;
     }
+}
+.kontakt-card {
+    height: 600px;
 }
 
 @media(max-width: 650px) {
@@ -518,6 +578,14 @@ nav ul li a:hover {
         width: 330px;
         height: 110px;
     }
+    .kontakt-card {
+        width: 100%;
+        height: 450px;
+        padding: 0px;
+    }
+    .text-kontakt p,h3 {
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 400px) { 
@@ -549,5 +617,12 @@ nav ul li a:hover {
     }
     .kon .ref-input {
         width: 240px;
+    }
+    .kontakt-card {
+        width: 100%;
+        height: 350px;
+    }
+    .text-kontakt p,h3 {
+        font-size: 12px;
     }
 }
