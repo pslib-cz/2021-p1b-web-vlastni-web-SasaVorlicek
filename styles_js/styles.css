@@ -589,6 +589,9 @@ nav ul li a:hover {
         height: 450px;
         padding: 0px;
     }
+    .card h3 {
+        font-size: 20px;
+    }
     .text-kontakt p,h3 {
         font-size: 15px;
     }
